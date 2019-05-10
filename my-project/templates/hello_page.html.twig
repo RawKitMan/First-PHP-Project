@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My actual title{% endblock %}
+
+{% block main %}
+    Hello {{ app.request.query.get('name') | default('CJ')}}!
+{% endblock %}
