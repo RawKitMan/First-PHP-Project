@@ -3,5 +3,7 @@
 {% block title %}My actual title{% endblock %}
 
 {% block main %}
-    Hello {{ app.request.query.get('name') | default('CJ')}}!
+    <div>
+        <p>I love you, {{ name }}</p>
+    </div>
 {% endblock %}
